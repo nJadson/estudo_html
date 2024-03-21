@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulárius</title>
+</head>
+    <body>
+        <h1>Formulárius Aqui</h1>
+        <p>Aqui terá um hein</p>
+        <hr>
+            <!--Geralmente no form vai também: action="arquivo.php" method="post"-->
+            <form > <!--Identifica que dentro da chave existirá um formulário-->
+                <br>
+
+                <label for="campo_nome">Nome:</label> <!--É uma lgenda que explica para que serve o campo-->
+                <input id="campo_nome" type="text" placeholder="Digite seu nome aqui" required> <!--Tipo texto é String e placeholder é a dica dentro da box-->
+                <br><br>
+
+                <label for="campo_email">Email:</label> <!--É uma lgenda que explica para que serve o campo-->
+                <input id="campo_email" type="email" placeholder="Digite aqui um Email" required> <!--Tipo email ele saberá que precisa do @ e placeholder é a dica dentro da box-->
+                <br><br>
+
+                <label for="campo_senha">Senha:</label> <!--É uma lgenda que explica para que serve o campo-->
+                <input id="campo_senha" type="password" placeholder="Digite uma senha" required> <!--Tipo password é um camuflador que esconde os caracteres e placeholder é a dica dentro da box-->
+                <br><br>
+
+                <br>
+                <hr>
+                    <h4>Tipo Rádius :D - Colha nimalzin</h4>
+                    <!--Aqui podemos ver que o tipo radio será radiobutton, onde será uma opção. Definimos o valor como Gato (O texto referencial) e ID:cat para que a label consiga referenciar e ao clicar no nome, venha aselecionar o radiobutton-->
+                    <input type="radio"name="animal" value="Cachorro" id="dog">
+                        <label for="dog">Cachorro</label>
+                    <input type="radio"name="animal" value="Gato" id="cat">
+                        <label for="cat">Gato</label>
+                    <input type="radio"name="animal" value="Raposinha" id="fox">
+                        <label for="fox">Gato</label>
+                    <input type="radio"name="animal" value="Lobo" id="wolf">
+                        <label for="wolf">Lobo</label>
+                    <br><br>
+                    <!--Seria igual ao anterior, porém multiopção-->
+                    <hr>
+                    <h5>O que você tem em casa?</h5>
+                    <input type="checkbox" id="item1" name="item1" value="TV">
+                        <label for="item1">TV</label>
+                    <input type="checkbox" id="item2" name="item2" value="Geladeira">
+                        <label for="item2">Geladeira</label>
+                    <input type="checkbox" id="item3" name="item3" value="Compiutar">
+                        <label for="item3">Compiutar</label>
+                    <input type="checkbox" id="item4" name="item4" value="AirfraIER">
+                        <label for="item4">AirfraIER</label>
+                    <br><br>
+
+                    <hr>
+                    <h5>SeletoRI - Colha corzinha :3</h5>
+                        <!--Select significa campo selector (Com caixa que abre). Damos o atributo name em select, juntamente para recuperar o campo com cores e verificar/pegar o dado que foi escolhido ao enviar o formulário,
+                        opções também servirão aqui para definir o que deverá aparecer na listagem de opções.
+                        Ponto importante a se ressaltar é que (select disable) serve para demostrar a dica e nunca deixar sem seleção
+                        assim, tornando-se o atributo default, forçando o usuário a trocar a informação por outra cadastrada.-->
+                        <select name="cores">
+                            <option selected disabled value="colha uma corzinha">Colha uma corzinha</option>
+                            <option value="vermelho">Vermeio</option>
+                            <option value="azul">Azuli</option>
+                            <option value="verde">Vierde</option>
+                        </select>
+                    <br><br>
+                    <hr>
+                    <textarea name="text_long" id="text_long" cols="60" rows="12" placeholder="Digite aqui seu texto"></textarea>
+
+                    <br><br>
+                    <hr>
+                    <br>
+                    <input type="submit" value="Enviar Formulárius">
+
+            </form><br>
+        <hr>
+        <button>Butãozim</button>
+        <hr>
+        <br>
+        <a href="../primeiro-site/index.html">Clique para ir ao inicio hehe</a>
+        <hr>
+    </body>
+</html>
